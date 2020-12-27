@@ -6,6 +6,15 @@ renderList();
 //add button click listener
 const addBtn = document.getElementById("addBtn");
 addBtn.addEventListener("click", () => {
+  addTodo();
+});
+document.querySelector("input").addEventListener("keyup", (event) => {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    addTodo();
+  }
+});
+function addTodo() {
   const todo = document.querySelector("input").value.trim();
   console.log(todo);
   if (todo == "") {
@@ -19,7 +28,7 @@ addBtn.addEventListener("click", () => {
   renderList();
 
   document.querySelector("input").value = "";
-});
+}
 
 //render list function
 function renderList() {
