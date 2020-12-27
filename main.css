@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E4E6C3;
+    padding: 20px;
+    color: #261C15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0 35px;
+    padding: 0;
+}
+
+.addToDo {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.addToDo svg {
+    color: #F05D23;
+    border: #F05D23 solid 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.addToDo svg:hover {
+    color: #8d3613;
+    border: #8d3613 solid 2px;
+}
+
+.addToDo input {
+    border-radius: 5px;
+    border: #F05D23 solid 2px;
+    width: 100%;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+.navigation h4 {
+    cursor: pointer;
+}
+.navigation h4:hover {
+    color: #F05D23;
+}
+
+h4.active {
+    opacity: 0.5;
+}
+
+.doing div, .done div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f7f7f2;
+    border-radius: 5px;
+    padding: 12px;
+    margin: 5px;
+}
+
+.check {
+    color: #C5D86D;
+    cursor: pointer;
+}
+
+.check:hover {
+    color: #708516;
+}
+
+.dell {
+    color: #ff1a1a;
+    cursor: pointer;
+}
+.dell:hover {
+    color: #ff5e5e;
+    cursor: pointer;
+}
+
+.done {
+    display: none;
+}
